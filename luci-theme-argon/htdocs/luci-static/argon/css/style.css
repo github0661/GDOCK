@@ -2976,7 +2976,7 @@ header > .container > .pull-right > * {
 .node-main-login > .main .cbi-value > * {
     display: inline-block !important;
 }
-.node-main-login > .main .cbi-value:first-child , .node-main-login > .main .cbi-button-reset{
+.node-main-login > .main .cbi-button-reset{
     display:none !important;
 }
 
@@ -2984,7 +2984,19 @@ header > .container > .pull-right > * {
 .node-main-login > .main .cbi-value.cbi-value-last .cbi-value-title{
     display: none !important;
 }
+.node-main-login > .main .cbi-value.cbi-value .cbi-value-title{
+    display: none !important;
+}
+
 .node-main-login > .main .cbi-value.cbi-value-last .cbi-input-text{
+    box-shadow: 0 1px 3px rgba(50,50,93,.15), 0 1px 0 rgba(0,0,0,.02);
+    transition: box-shadow .15s ease;
+    border-radius: .375rem;
+    box-sizing:border-box;
+    padding-left:3em;
+    margin: 0;
+}
+.node-main-login > .main .cbi-value.cbi-value .cbi-input-text{
     box-shadow: 0 1px 3px rgba(50,50,93,.15), 0 1px 0 rgba(0,0,0,.02);
     transition: box-shadow .15s ease;
     border-radius: .375rem;
@@ -3000,11 +3012,23 @@ header > .container > .pull-right > * {
     padding-left:3em;
     margin: 0;
 }
-
+.node-main-login > .main .cbi-value.cbi-value .cbi-input-user{
+    box-shadow: 0 1px 3px rgba(50,50,93,.15), 0 1px 0 rgba(0,0,0,.02);
+    transition: box-shadow .15s ease;
+    border-radius: .375rem;
+    box-sizing:border-box;
+    padding-left:3em;
+    margin: 0;
+}
 .node-main-login > .main .cbi-value.cbi-value-last .cbi-value-field{
     position:relative;
 	width: 20rem;
 }
+.node-main-login > .main .cbi-value.cbi-value .cbi-value-field{
+    position:relative;
+	width: 20rem;
+}
+
 .node-main-login > .main .cbi-value.cbi-value-last .cbi-value-field:before{
     font-family: 'icomoon' !important;
     speak: none;
@@ -3023,7 +3047,24 @@ header > .container > .pull-right > * {
     left: 10px;
     top: 10px;
 }
-
+.node-main-login > .main .cbi-value .cbi-value-field:before{
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e900";
+    color: #adb5bd;
+    font-size: 1.5rem;
+    position: absolute;
+    z-index: 100;
+    left: 10px;
+    top: 10px;
+}
 .node-main-login > .main .cbi-input-user,
 .node-main-login > .main .cbi-input-password {
     min-width: 15rem;
@@ -3474,6 +3515,9 @@ header > .container > .pull-right > * {
     }
 
     .node-system-packages > .main .cbi-value.cbi-value-last > div {
+        width: 100% !important;
+    }
+	.node-system-packages > .main .cbi-value.cbi-value > div {
         width: 100% !important;
     }
     .node-system-packages  .cbi-section-node .cbi-value {
